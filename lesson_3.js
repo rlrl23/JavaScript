@@ -24,31 +24,31 @@ function aratosfen() {
 aratosfen();
 
 //2 and 3
-var myBasket = ['apple', 'potato', 'icecream', 'apple'];
+var myBasket = { 'apple': 1, 'potato': 0.5, 'icecream': 2 };
 
 function countBasketPrice(myBasket) {
     var sum = 0;
-    for (var i = 0; i < myBasket.length; i++) {
-        switch (myBasket[i]) {
+    for (var val in myBasket) {
+        switch (val) {
             case 'apple':
-                sum += 110;
+                sum += 110 * myBasket[val];
                 break;
             case 'potato':
-                sum += 50;
+                sum += 50 * myBasket[val];
                 break;
             case 'icecream':
-                sum += 350;
+                sum += 350 * myBasket[val];
                 break;
             case 'tomato':
-                sum += 220;
+                sum += 220 * myBasket[val];
                 break;
             default:
                 break;
         }
 
-    } alert(sum)
+    } return sum;
 }
-countBasketPrice(myBasket);
+alert(countBasketPrice(myBasket));
 
 //4
 function one_line() {
