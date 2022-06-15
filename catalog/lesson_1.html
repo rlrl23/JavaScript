@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="Checking.js" defer></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1 {
+            text-align: center;
+        }
+
+
+
+        .basket {
+            flex-direction: column;
+            margin-left: 0px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .nav p {
+            color: #d32f2f;
+            font-size: 11px;
+
+        }
+
+        .nav {
+            width: 10em;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f4f4f4;
+            border: 1px dashed #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        .nav img {
+            position: relative;
+            width: 50%;
+            align-self: center;
+        }
+
+        .count {}
+
+        .catalog {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 200px;
+            /* Ограничение ширины */
+            margin: auto;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+
+        .price {
+            color: #d32f2f;
+            font-size: 18px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 10px;
+            color: #fff;
+            background-color: #f44336;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .mini {
+            max-width: 100px;
+            flex-direction: column;
+            align-self: left;
+        }
+
+        .gallery__back {
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            opacity: 0.8;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: block;
+            text-align: center;
+        }
+
+        .gallery__image {
+            max-height: 80%;
+            max-width: 80%;
+            z-index: 101;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .gallery__close {
+            z-index: 101;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="h1">Интернет магазин</h1>
+
+    <div class="catalog">
+    </div>
+    <hr>
+    </hr>
+    <div class="basket"></div>
+
+</body>
