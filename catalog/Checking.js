@@ -129,7 +129,7 @@ function create_button_buy() {
 
 function click_button() {
 
-    for (product in catalog.price) {
+    for (let product in catalog.price) {
 
         document.querySelector('#' + product).addEventListener('click',
             function (event) { myBasket.addProduct(String(event.target.id), 1); });
